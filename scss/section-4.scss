@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.sec-4-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    width: 98%;
+}
+
+.sec-4-logo {
+    width: 85px;
+    height: 85px;
+}
+
+.sec-4-center-div {
+    text-align: center;
+
+    margin-top: 80px;
+}
+
+.sec-4-ul-im {
+    background-image: url(/img/svg/skobka.svg);
+    position: absolute;
+    margin-left: 61px;
+    margin-top: -10px;
+}
+
+.sec-4-ul {
+    background: rgb(250, 250, 250);
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    width: 280px;
+    max-height: 308px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 29px;
+}
+
+.sec-4-ul-p {
+    color: rgb(0, 0, 0);
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 255%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.sec-4-ul-div {
+    border: 1px solid rgb(225, 225, 225);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 180px;
+}
+
+.sec-4-div {
+    text-align: center;
+
+    margin-top: 28px;
+}
+
+.sec-4-p {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0%;
+
+    margin-bottom: 30px;
+    margin-top: 18px;
+}
+
+@media screen and (min-widht: 420px) and (max-widht: 620px) {
+    .sec-4-img {
+        min-width: 420px;
+        max-width: 680px;
+        width: 100%;
+    }
+}
