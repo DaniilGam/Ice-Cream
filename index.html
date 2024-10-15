@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/body.css">
-    <link rel="stylesheet" href="/dist/css/section-4.css">
+    <link rel="stylesheet" href="/scss/section-4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -12,50 +12,43 @@
 </head>
 <body class="body">
     <section class="section-4">
-        <img class="sec-4-img" src="/img/jpg/tablet-home-pic.jpeg" alt="">
+        <picture>
+            <source 
+            srcset="./img/jpg/home-pic-desc.png 1x, ./img/jpg/home-pic-desc@2x.png 2x"
+            media="(min-width:1200px )"
+            />
+            <source
+            srcset="./img/jpg/home-pic-tablet.png 1x, ./img/jpg/home-pic-tablet@2x.png 2x"
+              media="(min-width:500px )"
+            />
+            <source
+            srcset="./img/jpg/home-pic-tel.png 1x, ./img/jpg/home-pic-tel@2x.png 2x"
+              media="(min-width:0px )"
+            />
+            <img class="sec-4-img" src="./img/home-pic-tel.png" alt="" />
+          </picture>
+        <div class="section-4-div">
         <div class="sec-4-center-div">
+            <div class="slider">
         <img class="sec-4-logo" src="/img/jpg/testimonials1.jpeg" alt="">
+        <img class="sec-4-logo" src="img/jpg/testimonials1 1.jpeg" alt="">
+        <img class="sec-4-logo" src="img/jpg/testimonials1 2.jpeg" alt="">
+            </div> 
         </div>
-        <ul class="sec-4-ul">
-            <div class="sec-4-ul-im"></div>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">Nullam viverra</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">consectetuer. Quisque</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">cursus et, porttitor risus.</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">Aliquam sem. In hendrerit</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">nulla quam nunc,</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">accumsan congue. Lorem</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">ipsum primis in nibh vel</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-            <li class="sec-4-ul-li">
-                <p class="sec-4-ul-p">risus.</p>
-                <div class="sec-4-ul-div"></div>
-            </li>
-        </ul>
+        <div class="sec-4-first-div">
+            <svg class="my-first-svg">
+                <use href="./img/svg/symbol-defs.svg#icon-skobka"></use>
+            </svg>
+            <p class="slider-text sec-4-div-p">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+        </div>
         <div class="sec-4-div">
             <img class="sec-4-img-2" src="img/svg/Group 8.svg" alt="">
             <p class="sec-4-p">Emily, Los Angeles</p>
             <img class="sec-4-img-3" src="img/svg/hr dots.svg" alt="">
         </div>
+    </div>
     </section>
 </body>
 </html>
