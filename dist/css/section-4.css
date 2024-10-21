@@ -120,6 +120,10 @@ table {
   margin-top: 18px;
 }
 
+.carousel-inner {
+  min-height: 150px;
+}
+
 @media screen and (min-widht: 420px) and (max-widht: 620px) {
   .sec-4-img {
     min-width: 420px;
